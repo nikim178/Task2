@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/181953a3bc.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+    <ul class="nav-element">
+        <li class="nav"><a href="#about">About</a></li>
+        <li class="nav"><a href="#service">Service</a></li>
+        <li class="nav"><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+    <div class="container1">
+    <div class="introduction">
+        <div class="intro-text">
+             <p class="intro-text1">We have <br>Design<br>Experience </p>
+        </div>
+        <div class="intro-text2">
+            <p class="intro-text3">Hi! I'm a UI/UX Designer- creating bold & brave<br> interface design for companies all across the world</p>
+        </div>
+        <div class="message">
+             <div class="button">Let's talk<i class="fa-sharp fa-regular fa-paper-plane"></i></div>
+        </div>
+        <div class="socials">
+            <div class="check">Check Out My</div>
+            <div class="icon1"><a href="#"><i class="fa-brands fa-github fa-2x"></i></a></div>
+            <div class="icon2"><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></div>
+        </div>
+    </div>
+    <div class="intro-img">
+        <img src="images/profile1.png">
+    </div>
+</div>
+<!-- <div class="container2"> -->
+<div class="container3">
+
+
+<div class="about1">
+    <div class="about">About Me</div>
+    <p class="para1">I am passionate about learning and exploring new technologies<br> to create innovative solutions. I am a fast learner and <br>have good problem-solving skills. I am excited to contribute my<br> skills and learn from experienced developers while working<br> on meaningful projects.</p>
+    <div class="para2">Know me</div>
+    <p class="para1">👨🏽‍💻 I’m currently a CS Undergrad student at Vidyvardhini's College<br> of Engineering and Technology, Mumbai<br>
+        ✨A Little Bit of Everything<br> 🌱I have completed courses and worked on personal projects in web<br> development, data structures and algorithms, and mobile app development.</p>
+    
+</div>
+<div class="skills">
+    <div class="para2">My Skills</div>
+    <div class="title">Frontend</div>
+    <div class="skill1">
+        <div class="circle"><i class="fa-brands fa-html5 fa-3x"></i></div>
+        <div class="circle"><i class="fa-brands fa-css3-alt fa-3x"></i></div>
+        <div class="circle"><i class="fa-brands fa-js fa-3x"></i></div>
+        <div class="circle"><i class="fa-brands fa-react fa-3x"></i></div>
+        <div class="circle"><i class="fa-brands fa-bootstrap fa-3x"></i></div>
+    </div>
+    
+    <div class="title">Backend</div>
+    <div class="skill2">
+    <div class="circle2"><i class="fa-brands fa-java fa-3x"></i></div>
+    <div class="circle2"><i class="fa-brands fa-python fa-3x"></i></div>
+    <div class="circle2"><img src="images/icons8-flask-50 (1).png"></div> 
+    <div class="circle2"><img src="images/icons8-nodejs-64.png"></div>
+    </div>
+    <div class="skill4">
+        <div class="circle2"><img src="images/icons8-mongodb-a-cross-platform-document-oriented-database-program-48.png"></div>
+        <div class="circle2"><img src="images/icons8-sql-60.png"></div>
+        <div class="circle2"><i class="fa-brands fa-php fa-3x"></i></div>
+    </div>
+    <div class="title">Mobile</div>
+    
+    <div class="circle"><i class="fa-brands fa-android fa-3x"></i></div>
+
+    <div class="title">Design</div>
+    <div class="skill3">
+    <div class="circle"><i class="fa-brands fa-figma fa-3x"></i></div>
+    <div class="circle"><img src="images/icons8-canva-50.png"></div>
+    </div>
+</div>
+</div>
+</div>
+<div class="container4">
+    <div class="projects">
+        <div class="project1">
+        <p class="about">Latest<br> Projects</p>
+        <p>First project</p>
+        </div>
+        <div class="project2">
+            <p>Second project</p>
+        </div>
+        <div class="project3">
+            <p>Third project</p>
+        </div>
+    </div>
+</div>
+<script>
+// // JavaScript code to handle the parallax effect
+// JavaScript code to handle the parallax effect
+const parallaxElements = document.querySelectorAll('.js-parallax');
+const parallaxSpeed = 0.4; // Adjust this value to control the speed of the parallax effect
+
+function handleParallax() {
+  parallaxElements.forEach((element) => {
+    const scale = parseFloat(element.getAttribute('data-scale'));
+    const orientation = element.getAttribute('data-orientation');
+    const posY = window.scrollY;
+
+    let translateY = 0;
+    if (orientation === 'up') {
+      translateY = -posY * scale * parallaxSpeed;
+    } else if (orientation === 'down') {
+      translateY = posY * scale * parallaxSpeed;
+    }
+
+    element.style.transform = `translate3d(0px, ${translateY}px, 0px)`;
+  });
+}
+
+window.addEventListener('scroll', handleParallax);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     AOS.init(); // parallax effect
+    
+//     (function () 
+
+
+
+
+
+
+</script>
+</body>
+</html>
